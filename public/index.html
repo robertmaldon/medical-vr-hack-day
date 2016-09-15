@@ -14,8 +14,9 @@
           target: #target;
           enableDamping: true;
           dampingFactor: 0.125;
-          rotateSpeed:0.25;
-          minDistance:3;
+          rotateSpeed: 1;
+          distance: 0;
+          minDistance:1;
           maxDistance:100;"
         mouse-cursor="">
       </a-entity>
@@ -26,7 +27,7 @@
         <a-asset-item id="spine-obj" src="spine.obj"></a-asset-item>
         <a-asset-item id="spine-mtl" src="spine.mtl"></a-asset-item>
       </a-assets>
-      <a-entity id-"spine" obj-model="obj: #spine-obj; mtl: #spine-mtl"></a-entity>
+      <a-entity id="spine" position="0 0 0" obj-model="obj: #spine-obj; mtl: #spine-mtl"></a-entity>
     </a-scene>
   </body>
 </html>
