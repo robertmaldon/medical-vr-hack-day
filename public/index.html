@@ -1,14 +1,32 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="aframe-0.3.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/master/dist/aframe-orbit-controls-component.min.js"></script>
   </head>
   <body>
     <a-scene>
+      <a-entity
+        id="camera"
+        camera
+        position="0 0 5"
+        orbit-controls="
+          autoRotate: false;
+          target: #target;
+          enableDamping: true;
+          dampingFactor: 0.125;
+          rotateSpeed:0.25;
+          minDistance:3;
+          maxDistance:100;"
+        mouse-cursor="">
+      </a-entity>
+
+      <a-entity id="target" geometry="primitive: box" scale="1 1 1" position="0 0 0" material="color: #cc0000"></a-entity>
+
       <a-assets>
         <a-asset-item id="spine-obj" src="spine.obj"></a-asset-item>
         <a-asset-item id="spine-mtl" src="spine.mtl"></a-asset-item>
       </a-assets>
-      <a-entity obj-model="obj: #spine-obj; mtl: #spine-mtl"></a-entity>
+      <a-entity id-"spine" obj-model="obj: #spine-obj; mtl: #spine-mtl"></a-entity>
     </a-scene>
   </body>
 </html>
