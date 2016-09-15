@@ -1,0 +1,23 @@
+{
+  "name": "medical-vr-hack-day",
+  "version": "0.0.1",
+  "description": "Example of using medical data with A-Frame",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertmaldon/medical-vr-hack-day.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertmaldon/medical-vr-hack-day/issues"
+  },
+  "homepage": "https://github.com/robertmaldon/medical-vr-hack-day#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
